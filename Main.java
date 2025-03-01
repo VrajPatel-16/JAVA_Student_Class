@@ -39,3 +39,18 @@ class Main {
                 case 2:
                     operations.displayStudents();
                     break;
+
+                case 3:
+                    System.out.print("Enter PRN to search: ");
+                    operations.searchByPRN(scanner.nextLong());
+                    break;
+
+                case 4:
+                    System.out.print("Enter Name to search: ");
+                    operations.searchByName(scanner.nextLine());
+                    break;
+
+                case 5:
+                    System.out.print("Enter Position to search: ");
+                    operations.searchByPosition(scanner.nextInt());
+                    break;
