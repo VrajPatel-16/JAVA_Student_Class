@@ -8,7 +8,7 @@ class Main {
 
         do {
             // Display menu options
-            System.out.println("\n Student Management System");
+            System.out.println("\n📌 Student Management System");
             System.out.println("1. Add Student");
             System.out.println("2. Display Students");
             System.out.println("3. Search by PRN");
@@ -21,3 +21,17 @@ class Main {
             
             choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
+
+            switch (choice) {
+                case 1:
+                    System.out.print("\nEnter Name: ");
+                    String name = scanner.nextLine();
+                    System.out.print("Enter PRN: ");
+                    long prn = scanner.nextLong();
+                    scanner.nextLine(); // Consume newline
+                    System.out.print("Enter DOB (DD/MM/YYYY): ");
+                    String dob = scanner.nextLine();
+                    System.out.print("Enter Marks: ");
+                    double marks = scanner.nextDouble();
+                    operations.addStudent(new Student(name, prn, dob, marks));
+                    break;
