@@ -38,3 +38,11 @@ class Student {
     public String getDOB() {
         return dob;
     }
+
+    // Setter and Getter for Marks
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
+    public double getMarks() {
+        return marks;
+    }
