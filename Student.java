@@ -30,3 +30,11 @@ class Student {
     public long getPRN() {
         return prn;
     }
+
+    // Setter and Getter for Date of Birth
+    public void setDOB(String dob) {
+        this.dob = dob;
+    }
+    public String getDOB() {
+        return dob;
+    }
