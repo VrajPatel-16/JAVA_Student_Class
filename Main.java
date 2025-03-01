@@ -8,7 +8,7 @@ class Main {
 
         do {
             // Display menu options
-            System.out.println("\n📌 Student Management System");
+            System.out.println("\n Student Management System");
             System.out.println("1. Add Student");
             System.out.println("2. Display Students");
             System.out.println("3. Search by PRN");
@@ -34,4 +34,8 @@ class Main {
                     System.out.print("Enter Marks: ");
                     double marks = scanner.nextDouble();
                     operations.addStudent(new Student(name, prn, dob, marks));
+                    break;
+
+                case 2:
+                    operations.displayStudents();
                     break;
