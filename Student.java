@@ -46,3 +46,14 @@ class Student {
     public double getMarks() {
         return marks;
     }
+
+    // Display student details
+    public void display() {
+        System.out.println("=====================================");
+        System.out.println("Name   : " + getName());
+        System.out.println("PRN    : " + getPRN());
+        System.out.println("DOB    : " + getDOB());
+        System.out.println("Marks  : " + getMarks());
+        System.out.println("=====================================");
+    }
+}
