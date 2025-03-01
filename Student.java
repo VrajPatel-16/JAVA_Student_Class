@@ -6,3 +6,11 @@ class Student {
     private long prn;
     private String dob;
     private double marks;
+
+    // Constructor
+    public Student(String name, long prn, String dob, double marks) {
+        setName(name);
+        setPRN(prn);
+        setDOB(dob);
+        setMarks(marks);
+    }
