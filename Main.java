@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 class Main {
@@ -54,3 +56,27 @@ class Main {
                     System.out.print("Enter Position to search: ");
                     operations.searchByPosition(scanner.nextInt());
                     break;
+
+                case 6:
+                    System.out.print("Enter PRN to update: ");
+                    long update_prn = scanner.nextLong();
+                    scanner.nextLine();
+                    System.out.print("Enter New Name: ");
+                    String new_name = scanner.nextLine();
+                    System.out.print("Enter New DOB: ");
+                    String new_dob = scanner.nextLine();
+                    System.out.print("Enter New Marks: ");
+                    double new_marks = scanner.nextDouble();
+                    operations.updateStudent(update_prn, new_name, new_dob, new_marks);
+                    break;
+
+                case 7:
+                    System.out.print("Enter PRN to delete: ");
+                    operations.deleteStudent(scanner.nextLong());
+                    break;
+            }
+        } while (choice != 8);
+
+        System.out.println(" Program Terminated.");
+    }
+}
