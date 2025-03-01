@@ -28,3 +28,15 @@ class StudentOperations {
             }
         }
     }
+
+    // Search student by PRN
+    public void searchByPRN(long prn) {
+        for (Student student : student_list) {
+            if (student.getPRN() == prn) {
+                System.out.println("\n Student Found:");
+                student.display();
+                return;
+            }
+        }
+        System.out.println("\n No student found with PRN: " + prn);
+    }
