@@ -14,3 +14,11 @@ class Student {
         setDOB(dob);
         setMarks(marks);
     }
+
+    // Setter and Getter for Name
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
