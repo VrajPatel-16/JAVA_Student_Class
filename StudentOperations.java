@@ -40,3 +40,15 @@ class StudentOperations {
         }
         System.out.println("\n No student found with PRN: " + prn);
     }
+
+    // Search student by Name
+    public void searchByName(String name) {
+        for (Student student : student_list) {
+            if (student.getName().equalsIgnoreCase(name)) {
+                System.out.println("\n Student Found:");
+                student.display();
+                return;
+            }
+        }
+        System.out.println("\n No student found with Name: " + name);
+    }
